@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icebreaker/enter_code_page.dart';
-import 'package:icebreaker/find_person_page.dart';
 import 'package:icebreaker/qr_code_page.dart';
+import 'package:icebreaker/question_page.dart';
 import 'package:icebreaker/routes.dart';
 import 'package:icebreaker/take_photo_page.dart';
 import 'package:icebreaker/thank_you_page.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Routes.enterCode: (_) => EnterCodePage(),
         Routes.takePhoto: (_) => TakePhotoPage(),
-        Routes.findPerson: (_) => FindPersonPage(),
+        Routes.questions: (_) => QuestionPage(),
         Routes.qrCode: (_) => QrCodePage(),
         Routes.thankYou: (_) => ThankYouPage(),
       },

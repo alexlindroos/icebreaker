@@ -110,6 +110,8 @@ class _QrCodePageState extends State {
 
   _onQrCodeScanned(qrText) {
     // Do something
+    // move to questions
+    // Navigator.pushReplacementNamed(context, Routes.questions);
   }
 
   _qrCode() {

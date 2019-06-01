@@ -1,8 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:icebreaker/routes.dart';
 
-class FindPersonPage extends StatelessWidget {
+class QuestionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,13 +15,8 @@ class FindPersonPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Text(
-              "Find Alex",
-              style: TextStyle(fontSize: 42.0),
-            ),
-            Container(
-              height: 150.0,
-              width: 150.0,
-              child: Placeholder(),
+              "Lets talk!",
+              style: TextStyle(fontSize: 32.0),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,6 +36,15 @@ class FindPersonPage extends StatelessWidget {
                       fontStyle: FontStyle.italic,
                     ),
                   ),
+                ),
+                SizedBox(
+                  width: 250.0,
+                  height: 10.0,
+                  child: RaisedButton(
+                      onPressed: () =>  Navigator.pushReplacementNamed(context, Routes.thankYou),
+                      child: Text("We are ready with our conversation!"),
+                      color: Colors.blue[300],
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
                 ),
               ],
             ),
