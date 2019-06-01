@@ -1,3 +1,6 @@
+# Project related
+**/lib/networking/credentials.dart
+
 # Miscellaneous
 *.class
 *.log
@@ -61,6 +64,8 @@
 **/ios/Flutter/flutter_assets/
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
+*.ipa
+*.app.dSYM.zip
 
 # Exceptions to above rules.
 !**/ios/**/default.mode1v3
@@ -68,3 +73,18 @@
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+android/.gradle/4.10.2/taskHistory/taskHistory.lock
+android/.gradle/4.10.2/taskHistory/taskHistory.bin
+android/.gradle/4.10.2/fileHashes/fileHashes.lock
+android/.gradle/4.10.2/fileHashes/fileHashes.bin
+android/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+android/local.properties
+*.xcconfig
+android/.gradle/4.10.2/javaCompile/taskHistory.bin
+android/.gradle/4.10.2/javaCompile/javaCompile.lock
+android/.gradle/4.10.2/javaCompile/jarAnalysis.bin
+android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin
+.project
+.settings
+.classpath
+android/key.properties
