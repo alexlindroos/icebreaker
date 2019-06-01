@@ -41,8 +41,6 @@ class FindAMatchTask {
         .reference()
         .snapshots()
         .listen((data) async {
-      if (completer.isCompleted) return;
-
       if (data != null && data.documents.isNotEmpty) {
         final potentialMatches = data.documents
             .where((snapshot) => snapshot.documentID != myUserId)
@@ -71,8 +69,10 @@ class FindAMatchTask {
                 'matchedUserId': myUserId,
               });
 
-              completer.complete(match.documentID);
-              subscription.cancel();
+              if (!completer.isCompleted) {
+                completer.complete(match.documentID);
+                subscription.cancel();
+              }
             }
           }
         }
