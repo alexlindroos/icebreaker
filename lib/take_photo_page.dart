@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:icebreaker/create_matchmaking_profile_task.dart';
+import 'package:icebreaker/match_users_task.dart';
 import 'package:icebreaker/routes.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -307,7 +308,9 @@ class _TakePhotoPageState extends State {
 
       try {
         await task.run('hack19-helsinki', 'Iiro', storageRef);
-        Navigator.pushReplacementNamed(context, Routes.findPerson);
+
+        await MatchUsersTask(FirebaseAuth.instance, Firestore.instance)
+            .run('hack19-helsinki');
       } catch (e) {
         _scaffoldKey.currentState.showSnackBar(
           SnackBar(
