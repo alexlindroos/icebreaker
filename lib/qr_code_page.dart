@@ -61,15 +61,20 @@ class _QrCodePageState extends State {
     } else {
       _content = Column(
         children: [
-          Expanded(
+          Flexible(
+            flex: 1,
             child: Container(
               child: _qrCode(),
             ),
           ),
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: Image.network(_match.avatarUrl),
+          Flexible(
+            flex: 1,
+            child: Row(children:  <Widget>[
+              Column(
+                children: <Widget>[
+                  Image.network(_match.avatarUrl, width: 150, height: 150, fit: BoxFit.cover,),
+                  Text(_match.name, style: TextStyle(fontSize: 20),),
+                ],
               ),
               Expanded(
                 child: Container(
@@ -80,6 +85,7 @@ class _QrCodePageState extends State {
                 ),
               ),
             ],
+            )
           ),
         ],
       );
