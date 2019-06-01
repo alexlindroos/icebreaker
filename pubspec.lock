@@ -123,6 +123,29 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
+  qr:
+    dependency: transitive
+    description:
+      name: qr
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.1"
+  qr_code_scanner:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: b4e8b4d
+      resolved-ref: b4e8b4d7e9119c01f62a36ed49423bc0edce6201
+      url: "https://github.com/juliuscanute/qr_code_scanner.git"
+    source: git
+    version: "0.0.5"
+  qr_flutter:
+    dependency: "direct main"
+    description:
+      name: qr_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0+51"
   quiver:
     dependency: transitive
     description:
