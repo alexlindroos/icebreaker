@@ -5,7 +5,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:icebreaker/find_a_match_task.dart';
-import 'package:icebreaker/routes.dart';
 import 'package:icebreaker/user_match.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -46,7 +45,6 @@ class _QrCodePageState extends State {
         if (!available && matchedUserId != null) {
           print('Its a match! Say Hello $matchedUserId');
           subscription.cancel();
-          Navigator.pushReplacementNamed(context, Routes.thankYou);
         }
       }
     });
