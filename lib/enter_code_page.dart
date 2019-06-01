@@ -4,8 +4,8 @@ import 'package:icebreaker/routes.dart';
 import 'package:icebreaker/validate_event_code_task.dart';
 
 class EnterCodePage extends StatelessWidget {
-  final _scaffoldKey = GlobalKey<ScaffoldState>();
-  final _controller = TextEditingController();
+  static final _controller = TextEditingController();
+  static final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
