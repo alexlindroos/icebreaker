@@ -1,8 +1,11 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:camera/camera.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 class TakePhotoPage extends StatefulWidget {
   @override
@@ -295,6 +298,16 @@ class TakePhotoPage extends StatefulWidget {
 
     _onNextClick() {
       // Save to firebase and go to next page
+
+      FirebaseAuth.instance.signInAnonymously()
+      .then((user) {
+        // Store as EventId + UserId
+        final StorageReference storageRef = FirebaseStorage.instance.ref().child(user.uid.toString());
+        storageRef.putFile(File(imagePath));
+      })
+      .catchError((error) {
+
+      });
     }
   
     void _showCameraException(CameraException e) {
