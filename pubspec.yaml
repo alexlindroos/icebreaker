@@ -1,0 +1,31 @@
+name: icebreaker
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  camera: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_storage: any
+  path_provider: any
+  fast_qr_reader_view:
+    git:
+      url: git@github.com:facundomedica/fast_qr_reader_view.git
+  flare_flutter: ^1.5.0
+  qr_flutter: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/

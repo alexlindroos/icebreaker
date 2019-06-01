@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:2:3-40
+		INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:4:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:5:22-66
+uses-feature#android.hardware.camera
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:7:5-60
+	android:name
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:7:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:8:2-91
+	android:required
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:8:65-89
+	android:name
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:8:16-64
+uses-feature#android.hardware.camera.flash
+ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:9:5-91
+	android:required
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:9:64-88
+	android:name
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml:9:19-63
+uses-sdk
+INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+		ADDED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/iirokrankka/.pub-cache/git/fast_qr_reader_view-05d629020b19b426c5d8f20a88d5a810ff304d7b/android/src/main/AndroidManifest.xml
