@@ -1,6 +1,6 @@
-import 'package:flare_flutter/flare_controller.dart';
-import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
+import 'package:flutter/material.dart';
+import 'package:icebreaker/routes.dart';
 
 class ThankYouPage extends StatelessWidget {
   @override
@@ -38,7 +38,7 @@ class ThankYouPage extends StatelessWidget {
               width: 150.0,
               height: 50.0,
               child: RaisedButton(
-                  onPressed: () => print("Button pressed"),
+                  onPressed: () => _findNewOne(context),
                   child: Text("Find a new one"),
                   color: Colors.blue[300],
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
@@ -47,7 +47,7 @@ class ThankYouPage extends StatelessWidget {
               width: 150.0,
               height: 50.0,
               child: RaisedButton(
-                  onPressed: () => print("Button pressed"),
+                  onPressed: () => _haveBreak(context),
                   child: Text("Have a break"),
                   color: Colors.blue[300],
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
@@ -57,4 +57,15 @@ class ThankYouPage extends StatelessWidget {
       ),
     );
   }
+
+  void _findNewOne(BuildContext context) {
+    //Go back to FindPersonPage
+    Navigator.pushReplacementNamed(context, Routes.findPerson);
+  }
+
+  void _haveBreak(BuildContext context) {
+    //Go back to TakePhotoPage
+    Navigator.pushReplacementNamed(context, Routes.takePhoto);
+  }
+
 }
