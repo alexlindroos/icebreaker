@@ -15,6 +15,11 @@ dependencies:
   firebase_storage: any
   path_provider: any
   flare_flutter: ^1.5.0
+  qr_flutter: any
+  qr_code_scanner:
+    git:
+      url: https://github.com/juliuscanute/qr_code_scanner.git
+      ref: b4e8b4d
 
 dev_dependencies:
   flutter_test:
