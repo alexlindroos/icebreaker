@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -75,12 +76,20 @@ class _QrCodePageState extends State {
               child: _qrCode(),
             ),
           ),
-          Expanded(
-            child: Container(
-                child: QRView(
-              key: qrKey,
-              onQRViewCreated: _onQRViewCreated,
-            )),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Image.network(_match.avatarUrl),
+              ),
+              Expanded(
+                child: Container(
+                  child: QRView(
+                    key: qrKey,
+                    onQRViewCreated: _onQRViewCreated,
+                  )
+                ),
+              ),
+            ],
           ),
         ],
       );
