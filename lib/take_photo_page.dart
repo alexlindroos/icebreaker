@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
 
 
@@ -225,14 +224,7 @@ class TakePhotoPage extends StatefulWidget {
         }
   
         if (controller.value.hasError) {
-          Fluttertoast.showToast(
-              msg: 'Camera error ${controller.value.errorDescription}',
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.CENTER,
-              timeInSecForIos: 1,
-              backgroundColor: Colors.red,
-              textColor: Colors.white
-          );
+          // Error
         }
       });
   
@@ -262,14 +254,7 @@ class TakePhotoPage extends StatefulWidget {
   
     Future _takePicture() async {
       if (!controller.value.isInitialized) {
-        Fluttertoast.showToast(
-            msg: 'Please wait',
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.CENTER,
-            timeInSecForIos: 1,
-            backgroundColor: Colors.grey,
-            textColor: Colors.white
-        );
+        // Please Wait
   
         return null;
       }
@@ -317,13 +302,6 @@ class TakePhotoPage extends StatefulWidget {
       String errorText = 'Error: ${e.code}\nError Message: ${e.description}';
       print(errorText);
   
-      Fluttertoast.showToast(
-          msg: 'Error: ${e.code}\n${e.description}',
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.CENTER,
-          timeInSecForIos: 1,
-          backgroundColor: Colors.red,
-          textColor: Colors.white
-      );
+      // Error
     }
   }
