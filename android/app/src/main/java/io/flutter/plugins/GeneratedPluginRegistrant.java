@@ -2,9 +2,10 @@ package io.flutter.plugins;
 
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugins.camera.CameraPlugin;
-import io.flutter.plugins.firebaseanalytics.FirebaseAnalyticsPlugin;
+import io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin;
+import io.flutter.plugins.firebaseauth.FirebaseAuthPlugin;
 import io.flutter.plugins.firebase.core.FirebaseCorePlugin;
-import io.flutter.plugins.pathprovider.PathProviderPlugin;
+import io.flutter.plugins.firebase.storage.FirebaseStoragePlugin;
 
 /**
  * Generated file. Do not edit.
@@ -15,9 +16,10 @@ public final class GeneratedPluginRegistrant {
       return;
     }
     CameraPlugin.registerWith(registry.registrarFor("io.flutter.plugins.camera.CameraPlugin"));
-    FirebaseAnalyticsPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebaseanalytics.FirebaseAnalyticsPlugin"));
+    CloudFirestorePlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebase.cloudfirestore.CloudFirestorePlugin"));
+    FirebaseAuthPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebaseauth.FirebaseAuthPlugin"));
     FirebaseCorePlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebase.core.FirebaseCorePlugin"));
-    PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
+    FirebaseStoragePlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebase.storage.FirebaseStoragePlugin"));
   }
 
   private static boolean alreadyRegisteredWith(PluginRegistry registry) {
