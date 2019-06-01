@@ -5,6 +5,7 @@ import 'package:icebreaker/qr_code_page.dart';
 import 'package:icebreaker/routes.dart';
 import 'package:icebreaker/take_photo_page.dart';
 import 'package:icebreaker/thank_you_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,24 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  void initState() {
+    super.initState();
+    _signInAnonymously();
+  }
+
+  Future<void> _signInAnonymously() async {
+    final user = await FirebaseAuth.instance.signInAnonymously();
+
+    print(user.toString());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
