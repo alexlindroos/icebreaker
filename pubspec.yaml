@@ -14,6 +14,7 @@ dependencies:
   cloud_firestore: any
   firebase_storage: any
   path_provider: any
+  flare_flutter: ^1.5.0
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
