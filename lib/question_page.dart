@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:icebreaker/routes.dart';
 
 class QuestionPage extends StatelessWidget {
   @override
@@ -35,6 +36,15 @@ class QuestionPage extends StatelessWidget {
                       fontStyle: FontStyle.italic,
                     ),
                   ),
+                ),
+                SizedBox(
+                  width: 250.0,
+                  height: 10.0,
+                  child: RaisedButton(
+                      onPressed: () =>  Navigator.pushReplacementNamed(context, Routes.thankYou),
+                      child: Text("We are ready with our conversation!"),
+                      color: Colors.blue[300],
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
                 ),
               ],
             ),
