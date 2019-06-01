@@ -39,7 +39,7 @@ class QuestionPage extends StatelessWidget {
                 ),
                 SizedBox(
                   width: 250.0,
-                  height: 10.0,
+                  height: 100.0,
                   child: RaisedButton(
                       onPressed: () =>  Navigator.pushReplacementNamed(context, Routes.thankYou),
                       child: Text("We are ready with our conversation!"),
