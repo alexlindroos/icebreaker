@@ -43,6 +43,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.11"
+  fast_qr_reader_view:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: "05d6290"
+      resolved-ref: "05d629020b19b426c5d8f20a88d5a810ff304d7b"
+      url: "git@github.com:facundomedica/fast_qr_reader_view.git"
+    source: git
+    version: "0.1.6"
   firebase_auth:
     dependency: "direct main"
     description:
@@ -130,15 +139,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.1"
-  qr_code_scanner:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: b4e8b4d
-      resolved-ref: b4e8b4d7e9119c01f62a36ed49423bc0edce6201
-      url: "https://github.com/juliuscanute/qr_code_scanner.git"
-    source: git
-    version: "0.0.5"
   qr_flutter:
     dependency: "direct main"
     description:

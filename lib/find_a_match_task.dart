@@ -24,6 +24,7 @@ class FindAMatchTask {
 
     final data = otherUserSnapshot.data;
     return UserMatch(
+      id: otherUserId,
       name: data['name'],
       avatarUrl: data['profile-image'],
     );

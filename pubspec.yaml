@@ -14,12 +14,12 @@ dependencies:
   cloud_firestore: any
   firebase_storage: any
   path_provider: any
+  fast_qr_reader_view:
+    git:
+      url: git@github.com:facundomedica/fast_qr_reader_view.git
+      ref: 05d6290
   flare_flutter: ^1.5.0
   qr_flutter: any
-  qr_code_scanner:
-    git:
-      url: https://github.com/juliuscanute/qr_code_scanner.git
-      ref: b4e8b4d
 
 dev_dependencies:
   flutter_test:
