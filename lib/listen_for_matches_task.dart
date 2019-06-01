@@ -31,6 +31,7 @@ class ListenForMatchesTask {
           if (!completer.isCompleted) {
             completer.complete(
               UserMatch(
+                id: otherUserSnapshot.documentID,
                 name: otherUserSnapshot['name'],
                 avatarUrl: otherUserSnapshot['profile-image'],
               ),
