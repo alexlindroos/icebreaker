@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ThankYouPage(),
+      home: EnterCodePage(),
       routes: {
         Routes.enterCode: (_) => EnterCodePage(),
         Routes.takePhoto: (_) => TakePhotoPage(),
