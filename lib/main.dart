@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: EnterCodePage(),
       routes: {
         Routes.enterCode: (_) => EnterCodePage(),
         Routes.takePhoto: (_) => TakePhotoPage(),
@@ -24,20 +23,6 @@ class MyApp extends StatelessWidget {
         Routes.qrCode: (_) => QrCodePage(),
         Routes.thankYou: (_) => ThankYouPage(),
       },
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Hello'),
-      ),
-      body: Center(
-        child: Text('Hello World!'),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

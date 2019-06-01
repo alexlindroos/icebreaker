@@ -17,7 +17,7 @@ class CreateMatchMakingProfileTask {
     final eventSnapshot =
         await firestore.collection('events').document(eventCode).get();
 
-    if (eventSnapshot == null) {
+    if (eventSnapshot == null && eventSnapshot.exists) {
       throw Exception('No event found for code $eventCode');
     }
 
