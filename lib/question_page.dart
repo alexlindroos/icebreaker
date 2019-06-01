@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class FindPersonPage extends StatelessWidget {
+class QuestionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,15 +13,6 @@ class FindPersonPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
-              "Find Alex",
-              style: TextStyle(fontSize: 42.0),
-            ),
-            Container(
-              height: 150.0,
-              width: 150.0,
-              child: Placeholder(),
-            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,

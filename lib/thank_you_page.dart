@@ -59,13 +59,13 @@ class ThankYouPage extends StatelessWidget {
   }
 
   void _findNewOne(BuildContext context) {
-    //Go back to FindPersonPage
-    Navigator.pushReplacementNamed(context, Routes.findPerson);
+    //Go back to QrCodePage
+    Navigator.pushReplacementNamed(context, Routes.qrCode);
   }
 
   void _haveBreak(BuildContext context) {
-    //Go back to TakePhotoPage
-    Navigator.pushReplacementNamed(context, Routes.takePhoto);
+    //Go back to Enter the Code Page
+    Navigator.pushReplacementNamed(context, Routes.enterCode);
   }
 
 }
